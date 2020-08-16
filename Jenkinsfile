@@ -11,7 +11,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'echo \'Hello Test World\''
-        git(url: 'https://github.com/shahmayank/building-a-multibranch-pipeline-project/tree/master/jenkins', branch: 'master')
+        git(url: 'https://github.com/shahmayank/building-a-multibranch-pipeline-project', branch: 'master')
       }
     }
 
