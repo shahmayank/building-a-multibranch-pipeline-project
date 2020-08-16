@@ -25,6 +25,7 @@ pipeline {
     stage('Deploy for production') {
       steps {
         echo 'Done Prod Deployment'
+        git(url: 'https://github.com/shahmayank/building-a-multibranch-pipeline-project', branch: 'Production')
       }
     }
 
