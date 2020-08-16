@@ -18,6 +18,7 @@ pipeline {
     stage('Deliver for development') {
       steps {
         sh 'echo \'Hello Development\''
+        git(url: 'https://github.com/shahmayank/building-a-multibranch-pipeline-project', branch: 'Development')
       }
     }
 
