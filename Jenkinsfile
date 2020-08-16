@@ -4,6 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh 'echo "Hello world!"'
+        git(url: 'https://github.com/shahmayank/building-a-multibranch-pipeline-project', branch: 'master')
       }
     }
 
