@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('Deliver for development') {
+      steps {
+        sh 'Hello \'Development\''
+      }
+    }
+
   }
 }
