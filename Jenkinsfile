@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('Deploy for production') {
+      steps {
+        echo 'Done Prod Deployment'
+      }
+    }
+
   }
 }
